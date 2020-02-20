@@ -122,8 +122,11 @@ html, body{
 }
 .responses-container{
 	display: flex;
+	list-style-type: none;
 	flex-flow: row nowrap;
 	width: max-content;
+	transform: translateX(var(--translateX));
+	transition: transform 0.2s ease-in-out;
 }
 .response-body{
 	display: flex;
@@ -176,6 +179,9 @@ html, body{
 	display: var(--display-secondary-paragraphs);
 	margin-top: var(--line-height-regular);
 }
+.expanded .response-text{
+	display: block;
+}
 .response-buttons-container{
 	display: var(--display-expand-button);
 }
@@ -185,6 +191,9 @@ html, body{
 	color: var(--color-text-secondary);
 	background: none;
 	border: none;
+}
+.template{
+	display: none;
 }
 
 @media screen and (max-width: 1200px){
