@@ -20,6 +20,7 @@
 	--padding-response-body: 30px 120px 30px 35px;
 	--margin-quotes-icon: 0px;
 	--padding-response-text: 0 0 0 30px;
+	--margin-responses-container: 40px 0px;
 
 	--border-response-author: 3px solid #BD00FF;
 	--display-secondary-paragraphs: block;
@@ -60,7 +61,6 @@ html, body{
 .responses-header-wrapper{
 	display: flex;
 	flex-flow: row nowrap;
-	margin-bottom: 40px;
 }
 .responses-header-heading{
 	font-weight: bold;
@@ -125,6 +125,7 @@ html, body{
 	list-style-type: none;
 	flex-flow: row nowrap;
 	width: max-content;
+	margin: var(--margin-responses-container);
 	transform: translateX(var(--translateX));
 	transition: transform 0.2s ease-in-out;
 }
@@ -220,6 +221,7 @@ html, body{
 		--padding-response-body: 20px;
 		--margin-quotes-icon: 0 15px 0 0;
 		--padding-response-text: 15px 0 15px 0;
+		--margin-responses-container: 30px 0px;
 
 		--border-response-author: none;
 		--display-nav-buttons: none;
